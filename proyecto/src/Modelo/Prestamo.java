@@ -15,5 +15,29 @@ public class Prestamo {
         this.fechaVencimiento = fechaPrestamo.plusDays(30);
     }
 
-    
+    public boolean estaVencido() {
+        return fechaDevolucion == null && LocalDate.now().isAfter(fechaVencimiento);
+    }
+
+    public void registrarDevolucion() {
+        this.fechaDevolucion = LocalDate.now();
+    }
+
+    public boolean puedeReprestarse() {
+        if (fechaDevolucion == null) return false;
+
+        return LocalDate.now().isAfter(fechaDevolucion.plusDays(7));
+    }
+
+    public LocalDate getFechaDevolucion() {
+        return fechaDevolucion;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public Libro getLibro() {
+        return libro;
+    }
 }
