@@ -53,4 +53,21 @@ public class Libro {
         if (estado == EnumEstado.RESERVADO)
             estado = EnumEstado.DISPONIBLE;
     }
+
+    //getters
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public EnumGenero getGenero() {
+        return genero;
+    }
+
+    public EnumEstado getEstado() {
+        return estado;
+    }
 }
