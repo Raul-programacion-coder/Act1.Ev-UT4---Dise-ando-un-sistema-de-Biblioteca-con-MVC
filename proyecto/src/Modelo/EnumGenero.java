@@ -1,0 +1,5 @@
+package Modelo;
+
+public enum EnumGenero {
+    NOVELA, CIENCIA_FICCION, HISTORIA, FANTASIA, MISTERIO, INFANTIL, POESIA, OTRO
+}
