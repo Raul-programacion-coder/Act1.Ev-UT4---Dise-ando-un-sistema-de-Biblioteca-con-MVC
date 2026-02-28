@@ -36,6 +36,16 @@ public class Usuario {
         }
         return true;
     }
-    
 
+    public String getId() {
+        return id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public List<Prestamo> getPrestamosActivos() {
+        return prestamosActivos;
+    }
 }
