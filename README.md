@@ -2,6 +2,12 @@
 
 
 
+Descripción breve del proyecto:
+
+Un sistema de gestión de biblioteca utilizando clases bajo el Patrón MVC en Java. Este sistema permite gestionar libros y usuarios, así como realizar préstamos, devoluciones, reservas, etc.
+
+
+
 Ejecución del programa:
 
 
